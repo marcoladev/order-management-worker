@@ -18,7 +18,7 @@ public class NotificationConsumer : BackgroundService
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         using var scope = _scopeFactory.CreateScope();
-        
+         
         /*
         var notificationHandler = scope.ServiceProvider
         .GetRequiredService<NotificationHandler>();
