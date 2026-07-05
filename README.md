@@ -1,6 +1,6 @@
 # Order Management Worker
 
-A standalone, event-driven background processing service built with .NET 8 following Clean Architecture principles. This worker is designed to consume messaging payloads asynchronously from RabbitMQ and persist telemetry metrics to a MySQL data store.
+A event-driven background processing service built with .NET 9 following Clean Architecture principles. This worker is designed to consume messaging payloads asynchronously from RabbitMQ and persist telemetry metrics to a MySQL data store.
 dot
 ## Purpose
 
