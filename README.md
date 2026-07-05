@@ -1,10 +1,25 @@
 # Order Management Worker
 
 A standalone, event-driven background processing service built with .NET 8 following Clean Architecture principles. This worker is designed to consume messaging payloads asynchronously from RabbitMQ and persist telemetry metrics to a MySQL data store.
-
+dot
 ## Purpose
 
 The Worker acts as a consumer companion to the `OrderManagement.Api`. It decouples heavy-lifting, asynchronous operations—such as processing events, constructing audit logs, and preparing state tracking records—keeping the public-facing HTTP API fast and lightweight.
+
+## Solution Structure
+
+```text
+OrderManagement
+│
+├── src
+│   ├── OrderManagement.Application
+│   ├── OrderManagement.Domain
+│   ├── OrderManagement.Infrastructure
+│   └── OrderManagement.Worker
+│
+│
+└── OrderManagement.sln
+```
 
 ## Architecture
 
@@ -39,15 +54,12 @@ MySQL (AuditLogs)
 
 ## Technologies
 
-* .NET 8
+* .NET 9
 * ASP.NET Core
 * Entity Framework Core
 * MySQL
 * RabbitMQ
-* FluentValidation
 * Docker
-* xUnit
-* Swagger
 
 ## Running RabbitMQ
 
