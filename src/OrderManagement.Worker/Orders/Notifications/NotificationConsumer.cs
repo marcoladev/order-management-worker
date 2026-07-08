@@ -1,3 +1,5 @@
+using OrderManagement.Application.Notification;
+
 namespace OrderManagement.Worker.Orders.Notifications;
 
 public class NotificationConsumer : BackgroundService
@@ -13,11 +15,11 @@ public class NotificationConsumer : BackgroundService
     {
         using var scope = _scopeFactory.CreateScope();
          
-        /*
+        
         var notificationHandler = scope.ServiceProvider
         .GetRequiredService<NotificationHandler>();
 
         await notificationHandler.HandleNotifications(stoppingToken);
-        */
+        
     }
 }
