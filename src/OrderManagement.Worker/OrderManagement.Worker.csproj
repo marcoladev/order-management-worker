@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-IntelligentTicketRouter.Worker-756ad2ef-f731-4b9b-b328-36f0611655ce</UserSecretsId>
+    <UserSecretsId>dotnet-OrderManagement.Worker-756ad2ef-f731-4b9b-b328-36f0611655ce</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
